@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Welcome = () => {
-  return (
-    <section>Welcome</section>
-  )
+  return <section id='home'>Welcome</section>
 }
 
 export default Welcome

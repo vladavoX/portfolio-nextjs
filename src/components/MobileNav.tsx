@@ -79,7 +79,7 @@ const MobileNav = () => {
               transition={{ duration: 0.2, delay: 0.9 }}
             >
               <Link
-                href='www.github.com/vladavoX'
+                href='https://github.com/vladavoX'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-4'
@@ -94,7 +94,7 @@ const MobileNav = () => {
               transition={{ duration: 0.2, delay: 1 }}
             >
               <Link
-                href='www.linkedin.com/in/va99'
+                href='https://linkedin.com/in/va99'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-4'

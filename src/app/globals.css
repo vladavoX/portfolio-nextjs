@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .green-span {
+    @apply text-green-600;
+    @apply italic;
+  }
+}

@@ -1,7 +1,7 @@
 'use client'
 import Hamburger from 'hamburger-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   AiFillHome,
   AiFillInfoCircle,
@@ -14,6 +14,11 @@ import { motion } from 'framer-motion'
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+
+  useEffect(() => {
+    isOpen && document.body.classList.add('overflow-hidden')
+    !isOpen && document.body.classList.remove('overflow-hidden')
+  }, [isOpen])
   return (
     <div className='md:hidden'>
       {isOpen && (

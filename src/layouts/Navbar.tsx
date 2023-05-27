@@ -1,6 +1,4 @@
 import MobileNav from '@/components/MobileNav'
-import Link from 'next/link'
-import React from 'react'
 import {
   AiFillGithub,
   AiFillHome,
@@ -13,62 +11,62 @@ import {
 const Navbar = () => {
   return (
     <nav className='md:fixed md:left-0 md:top-0 md:h-screen flex justify-center items-center bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200 text-2xl border-r-2 border-gray-700'>
-      <aside className='hidden md:flex flex-col justify-between h-full px-4 py-8'>
+      <aside className='hidden md:flex flex-col justify-between items-center h-full px-4 py-8'>
         <p>VA</p>
         <ul className='flex flex-col gap-4'>
           <li>
-            <Link
+            <a
               href='#home'
               className='hover:text-green-600 duration-150'
             >
               <AiFillHome />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href='#about'
               className='hover:text-green-600 duration-150'
             >
               <AiFillInfoCircle />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href='#projects'
               className='hover:text-green-600 duration-150'
             >
               <AiFillProject />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href='#contact'
               className='hover:text-green-600 duration-150'
             >
               <AiFillMail />
-            </Link>
+            </a>
           </li>
         </ul>
         <ul className='flex flex-col gap-4'>
           <li>
-            <Link
+            <a
               href='https://github.com/vladavoX'
               target='_blank'
               rel='noopener noreferrer'
               className='hover:text-green-600 duration-150'
             >
               <AiFillGithub />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href='https://linkedin.com/in/va99'
               target='_blank'
               rel='noopener noreferrer'
               className='hover:text-green-600 duration-150'
             >
               <AiFillLinkedin />
-            </Link>
+            </a>
           </li>
         </ul>
       </aside>

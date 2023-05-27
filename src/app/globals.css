@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @layer components {
   .green-span {
-    @apply text-green-600;
+    @apply text-green-700;
     @apply italic;
   }
 }

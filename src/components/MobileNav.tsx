@@ -1,7 +1,6 @@
 'use client'
 import Hamburger from 'hamburger-react'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   AiFillHome,
   AiFillInfoCircle,
@@ -29,52 +28,52 @@ const MobileNav = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 0.5 }}
             >
-              <Link
+              <a
                 href='#home'
                 className='flex items-center gap-4'
               >
                 <AiFillHome />
                 Home
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 0.6 }}
             >
-              <Link
+              <a
                 href='#about'
                 className='flex items-center gap-4'
               >
                 <AiFillInfoCircle />
                 About
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 0.7 }}
             >
-              <Link
+              <a
                 href='#projects'
                 className='flex items-center gap-4'
               >
                 <AiFillProject />
                 Projects
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 0.8 }}
             >
-              <Link
+              <a
                 href='#contact'
                 className='flex items-center gap-4'
               >
                 <AiFillMail />
                 Contact
-              </Link>
+              </a>
             </motion.li>
           </ul>
           <ul className='flex flex-col items-center gap-4'>
@@ -83,7 +82,7 @@ const MobileNav = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 0.9 }}
             >
-              <Link
+              <a
                 href='https://github.com/vladavoX'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -91,14 +90,14 @@ const MobileNav = () => {
               >
                 <AiFillGithub />
                 Github
-              </Link>
+              </a>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.2, delay: 1 }}
             >
-              <Link
+              <a
                 href='https://linkedin.com/in/va99'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -106,7 +105,7 @@ const MobileNav = () => {
               >
                 <AiFillLinkedin />
                 LinkedIn
-              </Link>
+              </a>
             </motion.li>
           </ul>
         </div>

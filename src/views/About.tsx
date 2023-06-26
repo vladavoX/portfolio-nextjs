@@ -1,6 +1,6 @@
 import Links from '@/components/Links'
-
 import SectionTopText from '@/components/SectionTopText'
+
 import { HobbiesIcons, TechIcons } from './about/Icons'
 
 const About = () => {

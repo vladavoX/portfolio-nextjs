@@ -21,7 +21,7 @@ const MobileNav = () => {
   return (
     <div className='md:hidden'>
       {isOpen && (
-        <div className='flex flex-col items-center justify-evenly absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-gray-900 to-gray-800'>
+        <div className='flex flex-col items-center justify-evenly fixed top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-gray-900 to-gray-800'>
           <ul className='flex flex-col items-center gap-4'>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
@@ -31,6 +31,7 @@ const MobileNav = () => {
               <a
                 href='#home'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillHome />
                 Home
@@ -44,6 +45,7 @@ const MobileNav = () => {
               <a
                 href='#about'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillInfoCircle />
                 About
@@ -57,6 +59,7 @@ const MobileNav = () => {
               <a
                 href='#projects'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillProject />
                 Projects
@@ -70,6 +73,7 @@ const MobileNav = () => {
               <a
                 href='#contact'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillMail />
                 Contact
@@ -87,6 +91,7 @@ const MobileNav = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillGithub />
                 Github
@@ -102,6 +107,7 @@ const MobileNav = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center gap-4'
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 <AiFillLinkedin />
                 LinkedIn

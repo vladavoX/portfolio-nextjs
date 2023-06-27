@@ -7,10 +7,10 @@ const About = () => {
   return (
     <section
       id='about'
-      className='h-screen text-gray-50 flex items-center w-full snap-start text-justify'
+      className='lg:h-screen text-gray-50 flex items-center w-full snap-start text-justify'
     >
-      <div className='lg:border-2 lg:border-gray-700 rounded-xl lg:p-8 p-4 w-full text-sm md:text-lg font-semibold lg:bg-gradient-to-br lg:from-gray-900 lg:to-gray-800 flex items-center gap-8'>
-        <div className='flex flex-col gap-4 w-1/2'>
+      <div className='lg:border-2 lg:border-gray-700 rounded-xl lg:p-8 p-4 w-full text-sm md:text-lg font-semibold lg:bg-gradient-to-br lg:from-gray-900 lg:to-gray-800 flex lg:items-center gap-8 flex-col lg:flex-row'>
+        <div className='flex flex-col gap-4 lg:w-1/2'>
           <span className='green-span'>&lt;section&gt;</span>
           <SectionTopText text='about me' />
           <div className='pl-4'>
@@ -25,7 +25,7 @@ const About = () => {
           <Links />
           <span className='green-span'>&lt;/section&gt;</span>
         </div>
-        <div className='flex flex-col gap-4 text-md md:text-xl w-1/2'>
+        <div className='flex flex-col gap-4 text-md md:text-xl lg:w-1/2'>
           <div className='p-8 bg-gray-900 rounded-xl border-l-2 border-gray-700 flex flex-col items-center gap-4 w-full'>
             <h3>Technologies</h3>
             <TechIcons />
